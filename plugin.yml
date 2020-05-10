@@ -1,0 +1,7 @@
+name: HubMenu
+version: 0.20.4
+main: com.magicaldreams.hubmenu.Main
+api-version: 1.14
+description: The HubMenu plugin for magicaldreams
+website: magicaldreams.us, github.com/nolant108
+commands:
