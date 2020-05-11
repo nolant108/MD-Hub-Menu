@@ -17,8 +17,8 @@ import com.magicaldreams.hubmenu.Main;
 
 public class OpenHub implements Listener {
 	
-	 ItemStack JoinMB;
-	    ItemMeta JoinMBMeta;
+	 ItemStack JoinMBHub;
+	    ItemMeta JoinMBHubMeta;
 		private Main main;
 	    public OpenHub(Main main) {
 			// TODO Auto-generated constructor stub
@@ -27,18 +27,18 @@ public class OpenHub implements Listener {
 
 
 		@EventHandler
-	    public void MBJoin(PlayerJoinEvent e){
+	    public void APHubJoin(PlayerJoinEvent e){
 
 	        Player player = e.getPlayer();
 
-	        JoinMB = new ItemStack(Material.PAPER);
+	        JoinMBHub = new ItemStack(Material.PAPER);
 
-	        JoinMBMeta = JoinMB.getItemMeta();
-	        JoinMBMeta.setDisplayName(ChatColor.BLUE + player.getName() + "'s Navigator");
+	        JoinMBHubMeta = JoinMBHub.getItemMeta();
+	        JoinMBHubMeta.setDisplayName(ChatColor.BLUE + player.getName() + "'s Navigator");
 
-	        JoinMB.setItemMeta(JoinMBMeta);
+	        JoinMBHub.setItemMeta(JoinMBHubMeta);
 
-	        player.getInventory().setItem(4, JoinMB);
+	        player.getInventory().setItem(4, JoinMBHub);
 
 
 	    }
